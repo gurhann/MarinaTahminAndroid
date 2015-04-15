@@ -1,15 +1,13 @@
 package com.kayra.marinatahmin;
 
-import android.app.ActionBar;
-import android.app.Activity;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TableLayout;
 
 import com.kayra.marinatahmin.model.Liman;
 
@@ -20,6 +18,7 @@ public class MainActivity extends android.support.v7.app.ActionBarActivity {
 
     private ArrayList<Liman> limanlar = new ArrayList<>();
     private Spinner limanlarSpinner;
+    private TableLayout anaTableLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +26,6 @@ public class MainActivity extends android.support.v7.app.ActionBarActivity {
         setContentView(R.layout.activity_main);
         limanListesiniOlustur();
         limanlarSpinner = (Spinner) findViewById(R.id.limanlarSpinner);
-
         String [] limanDizi = new String[limanlar.size()];
         for(int i = 0; i < limanDizi.length; i++) {
             limanDizi[i] = limanlar.get(i).toString();

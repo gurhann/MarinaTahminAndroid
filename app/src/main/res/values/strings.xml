@@ -4,6 +4,7 @@
     <string name="app_name">MarinaTahmin</string>
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+
     <string-array name="dizi">
         <item>Pazartesi</item>
         <item>Salı</item>
@@ -18,13 +19,16 @@
         <item>Perşembe</item>
         <item>Cuma</item>
         <item>Cumartesi</item>
-        <item>Pazar</item><item>Pazartesi</item>
+        <item>Pazar</item>
+        <item>Pazartesi</item>
         <item>Salı</item>
         <item>Çarşamba</item>
         <item>Perşembe</item>
         <item>Cuma</item>
         <item>Cumartesi</item>
         <item>Pazar</item>
-
     </string-array>
+
+    <string name="title_activity_main">MainActivity</string>
+
 </resources>

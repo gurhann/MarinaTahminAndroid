@@ -12,14 +12,16 @@ public class Tarih {
     private List<Tahmin> gunTahminleri;
 
 
-    public Tarih(){
+    public Tarih() {
         gunTahminleri = new ArrayList<>();
     }
-    public Tarih (String tarih, int kolonSayisi) {
+
+    public Tarih(String tarih, int kolonSayisi) {
         this.tarih = tarih;
         this.kolonSayisi = kolonSayisi;
         gunTahminleri = new ArrayList<>();
     }
+
     public String getTarih() {
         return tarih;
     }
